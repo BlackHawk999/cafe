@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import axios from "axios";
+// import axios from "axios";
 
 Vue.use(Vuex);
 
@@ -10,7 +10,7 @@ export default new Vuex.Store({
   },
   mutations: {},
   actions: {
-    GET_DESERTS_FROM_API({ commit }) {},
+    // GET_DESERTS_FROM_API({ commit }) {},
   },
   getters: {
     DESERTS(state) {
