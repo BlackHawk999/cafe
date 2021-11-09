@@ -20,15 +20,25 @@
 
 <script>
 import DesertList from "@/components/desert/DesertList";
+import { mapActions, mapState } from "vuex";
 export default {
   name: "DesertCard",
   components: {
     DesertList,
   },
   data() {
-    return {
-      
-    };
+    return {};
+  },
+  methods: {
+    ...mapActions(["GET_DESERTS_FROM_API"]),
+  },
+  computed: {
+    ...mapState({
+      deserts: (state) => state.deserts,
+    }),
+  },
+  mounted() {
+    this.GET_DESERTS_FROM_API();
   },
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
-  <div class="desert-wrapper">
+  <div class="desert-wrapper" @click="$router.push('/order')">
     <div class="desert-photo">
-      <img :src="imgUrl" alt="" />
+      <img :src="require(`@/assets/img/${imgUrl}`)" alt="" />
     </div>
     <div class="titlies-wrapper">
       <div class="desert-title">
