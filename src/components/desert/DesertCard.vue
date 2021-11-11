@@ -6,7 +6,7 @@
     <v-container>
       <div class="wrapper">
         <DesertList
-          v-for="(d, idx) in deserts"
+          v-for="(d, idx) in myJson"
           :key="idx"
           :img-url="d.imgUrl"
           :title="d.title"
@@ -20,26 +20,28 @@
 
 <script>
 import DesertList from "@/components/desert/DesertList";
-import { mapActions, mapState } from "vuex";
+import json from "@/database/db.js";
 export default {
   name: "DesertCard",
   components: {
     DesertList,
   },
   data() {
-    return {};
+    return {
+      myJson: json,
+    };
   },
-  methods: {
-    ...mapActions(["GET_DESERTS_FROM_API"]),
-  },
-  computed: {
-    ...mapState({
-      deserts: (state) => state.deserts,
-    }),
-  },
-  mounted() {
-    this.GET_DESERTS_FROM_API();
-  },
+  // methods: {
+  //   ...mapActions(["GET_DESERTS_FROM_API"]),
+  // },
+  // computed: {
+  //   ...mapState({
+  //     deserts: (state) => state.deserts,
+  //   }),
+  // },
+  // mounted() {
+  //   this.GET_DESERTS_FROM_API();
+  // },
 };
 </script>
 

@@ -254,7 +254,7 @@
 
 <script>
 import AddDelete from "@/components/order/AddDelete";
-import { mapActions, mapState } from "vuex";
+// import { mapActions, mapState } from "vuex";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 export default {
@@ -296,17 +296,17 @@ export default {
       ],
     };
   },
-  methods: {
-    ...mapActions(["GET_FOODS_FROM_API"]),
-  },
-  computed: {
-    ...mapState({
-      foods: (state) => state.foods,
-    }),
-  },
-  mounted() {
-    this.GET_FOODS_FROM_API();
-  },
+  // methods: {
+  //   ...mapActions(["GET_FOODS_FROM_API"]),
+  // },
+  // computed: {
+  //   ...mapState({
+  //     foods: (state) => state.foods,
+  //   }),
+  // },
+  // mounted() {
+  //   this.GET_FOODS_FROM_API();
+  // },
 };
 </script>
 
