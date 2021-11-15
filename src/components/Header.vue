@@ -43,6 +43,7 @@
       </div>
     </div>
     <v-container>
+      ushani tagidda yozuv bor usha chiqmepti
       <div class="header">
         <div class="wrapper">
           <div class="wrapper-intro">
@@ -215,10 +216,9 @@ export default {
 }
 .header {
   position: relative;
+  z-index: 2;
 
   .wrapper {
-    position: absolute;
-    z-index: 2;
     &-intro {
       margin: 45px 0 30px 0;
       z-index: 1;

@@ -14,6 +14,7 @@
           :price="d.price"
         />
       </div>
+      <pre>{{ myJson }}</pre>
     </v-container>
   </div>
 </template>
