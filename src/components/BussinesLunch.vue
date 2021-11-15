@@ -42,7 +42,7 @@ export default {};
 
 <style lang="scss" scoped>
 .lunch {
-  transform: translateY(-40%);
+  transform: translateY(-20%);
   background: linear-gradient(180deg, #1a1a1a 0%, #2c2c2c 100%);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 6px;

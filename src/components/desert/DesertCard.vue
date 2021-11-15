@@ -15,7 +15,6 @@
         />
       </div>
     </v-container>
-    <pre>test: {{ myJson }}</pre>
   </div>
 </template>
 
@@ -32,17 +31,6 @@ export default {
       myJson: json,
     };
   },
-  // methods: {
-  //   ...mapActions(["GET_DESERTS_FROM_API"]),
-  // },
-  // computed: {
-  //   ...mapState({
-  //     deserts: (state) => state.deserts,
-  //   }),
-  // },
-  // mounted() {
-  //   this.GET_DESERTS_FROM_API();
-  // },
 };
 </script>
 

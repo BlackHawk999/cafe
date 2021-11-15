@@ -43,7 +43,6 @@
       </div>
     </div>
     <v-container>
-      ushani tagidda yozuv bor usha chiqmepti
       <div class="header">
         <div class="wrapper">
           <div class="wrapper-intro">

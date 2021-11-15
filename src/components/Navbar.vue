@@ -8,7 +8,7 @@
           <div class="burger"></div>
           <div class="burger"></div>
         </div>
-        <div class="wrapper-logo">
+        <div class="wrapper-logo" @click="$router.push('/')">
           <div class="logo">
             <svg
               width="31"

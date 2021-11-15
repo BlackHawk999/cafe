@@ -254,7 +254,6 @@
 
 <script>
 import AddDelete from "@/components/order/AddDelete";
-// import { mapActions, mapState } from "vuex";
 import Navbar from "@/components/Navbar";
 import json from "@/database/ad.js";
 import Footer from "@/components/Footer";
