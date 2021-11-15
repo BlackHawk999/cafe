@@ -197,9 +197,9 @@
             <h6 class="def-food">Соус терияки</h6>
             <div class="add-wrapper">
               <AddDelete
-                v-for="(f, idx) in foods"
+                v-for="(f, idx) in secJson"
                 :key="idx"
-                @delete="foods.splice(idx, 1)"
+                @delete="secJson.splice(idx, 1)"
                 :title="f.title"
               />
               <div class="totally">
@@ -221,7 +221,7 @@
               </label>
             </div>
             <div class="basket-btn">
-              <button>В корзину</button>
+              <button @click="$router.push('/basket')">В корзину</button>
             </div>
           </div>
         </div>
@@ -256,6 +256,7 @@
 import AddDelete from "@/components/order/AddDelete";
 // import { mapActions, mapState } from "vuex";
 import Navbar from "@/components/Navbar";
+import json from "@/database/ad.js";
 import Footer from "@/components/Footer";
 export default {
   name: "OrderP",
@@ -267,6 +268,7 @@ export default {
   data() {
     return {
       count: 1,
+      secJson: json,
 
       deserts: [
         {
@@ -296,17 +298,6 @@ export default {
       ],
     };
   },
-  // methods: {
-  //   ...mapActions(["GET_FOODS_FROM_API"]),
-  // },
-  // computed: {
-  //   ...mapState({
-  //     foods: (state) => state.foods,
-  //   }),
-  // },
-  // mounted() {
-  //   this.GET_FOODS_FROM_API();
-  // },
 };
 </script>
 
